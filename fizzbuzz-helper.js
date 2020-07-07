@@ -1,10 +1,7 @@
 module.exports = {
     fizzBuzzImpl: function (cn) {
-        /**let xyz;
-        console.log(xyz);
-        xyz=null;
-        console.log(xyz);*/
-        if (cn === null || cn ==="undefined" || cn <=0) {
+        
+        if (cn === null || cn ==="undefined" || cn <= 0) {
             return "Invalid";
         } else if (cn % 15 ===0) {
             return "FizzBuzz";

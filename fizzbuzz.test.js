@@ -18,7 +18,7 @@ describe("FizzBuzz UniTest", () =>{
     it("Invalid test", () =>{
         const fbService = require('./fizzbuz-helper');
         expect(fbService.fizzBuzzImp(null)).toBe(Invalid);
-        expect(fbService.fizzBuzzImp(undefined)).toBe(Invalid);
+        expect(fbService.fizzBuzzImp("undefined")).toBe(Invalid);
         expect(fbService.fizzBuzzImp(-2)).toBe(Invalid);
         expect(fbService.fizzBuzzImp(2)).toBe(Invalid);
         expect(fbService.fizzBuzzImp("abc")).toBe(Invalid);
@@ -33,5 +33,7 @@ describe("FizzBuzz UniTest", () =>{
  * 
  * expect(..).toBe()
  * expect(..).toBeFalsy()
- * expect(..).toBe()
+ * expect(..).toBeTruthy()
+ * expect(..).toEqual()
+ * 
 */
